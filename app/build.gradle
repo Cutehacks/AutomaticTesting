@@ -34,8 +34,8 @@ dependencies {
 }
 
 appthwack {
-    apiKey = System.getenv("APIKEY")
+    apiKey = System.getenv("APIKEY") // NOTE: add your apikey here, or pass it on the command line
     type = 'junit'
     project = 'AutomaticTesting'
-    devicePool = 'Single device - Galaxy S4'
+    devicePool = 'Top 10 devices'
 }
