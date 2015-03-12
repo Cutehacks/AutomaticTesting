@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'appthwack'
 
 android {
     compileSdkVersion 21
@@ -30,4 +31,11 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.3'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
     androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+}
+
+appthwack {
+    apiKey = System.getenv("APIKEY")
+    type = 'junit'
+    project = 'AutomaticTesting'
+    devicePool = 'Single device - Galaxy S4'
 }
