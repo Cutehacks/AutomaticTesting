@@ -3,4 +3,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="button_name">Open Dialog</string>
+    <string name="alert_text">This is an AlertDialog</string>
 </resources>
